@@ -7,5 +7,8 @@ export default defineConfig({
     hmr: {
       overlay: false
     }
+  },
+  preview: {
+    allowedHosts: 'all'
   }
 })
