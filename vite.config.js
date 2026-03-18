@@ -9,6 +9,7 @@ export default defineConfig({
     }
   },
   preview: {
-    allowedHosts: 'all'
+    host: '0.0.0.0',
+    allowedHosts: true
   }
 })
