@@ -8,7 +8,6 @@ const currentHeartIndex = ref(0)
 const cycleHeart = () => {
   currentHeartIndex.value = (currentHeartIndex.value + 1) % hearts.value.length
   
-  // Mini confetti burst
   confetti({
     particleCount: 20,
     spread: 50,
@@ -31,9 +30,9 @@ const cycleHeart = () => {
       </div>
 
       <!-- Animated Heart -->
-      <button 
+      <button
         @click="cycleHeart"
-        class="text-6xl mb-8 animate-heart-beat cursor-pointer 
+        class="text-6xl mb-8 animate-heart-beat cursor-pointer
                hover:scale-110 transition-transform active:scale-95"
       >
         {{ hearts[currentHeartIndex] }}
@@ -42,11 +41,12 @@ const cycleHeart = () => {
       <!-- Love Message -->
       <div class="glass rounded-2xl p-6 mb-8">
         <p class="font-script text-xl text-primary mb-2">
-          Com todo amor do seu filho,
+          Com todo amor do seu Nilsinho,
         </p>
         <p class="font-sans text-muted text-sm">
-          Mãe, obrigado por existir na minha vida. Você é meu maior presente 
-          e eu sou eternamente grato por ser seu filho. Que venham mais 53 anos!
+          Mãe, obrigado por ser exatamente quem você é. Por cada abraço, cada puxão de orelha
+          e cada vez que você acreditou em mim antes de eu acreditar em mim mesmo.
+          Que Deus te guarde sempre. Eu te amo demais!
         </p>
       </div>
 
@@ -61,7 +61,7 @@ const cycleHeart = () => {
 
       <!-- Copyright -->
       <p class="font-sans text-muted/60 text-xs">
-        Feito com 💝 pelo seu filho que te ama
+        Feito com 💝 pelo seu filho Nilsinho, que te ama muito
       </p>
       <p class="font-sans text-muted/40 text-xs mt-2">
         53 anos da melhor mãe do mundo

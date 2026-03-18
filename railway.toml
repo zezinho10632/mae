@@ -1,7 +1,7 @@
 [build]
 builder = "nixpacks"
-buildCommand = "npm install --legacy-peer-deps && npm run build"
+buildCommand = "pnpm install && pnpm run build"
 
 [deploy]
-startCommand = "npm run start"
+startCommand = "pnpm run start"
 restartPolicyType = "on_failure"

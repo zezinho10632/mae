@@ -15,29 +15,29 @@ const messages = [
   {
     icon: '💝',
     title: 'Meu Primeiro Amor',
-    text: 'Mãe, você foi meu primeiro amor e sempre será o maior. Obrigado por cada noite mal dormida cuidando de mim, cada lágrima enxugada e cada sorriso que arrancou de mim.'
+    text: 'Mãe, antes de entender qualquer coisa da vida, eu já sabia que te amava. Você foi meu primeiro lar, minha primeira segurança. Tudo que sou começou em você.'
   },
   {
     icon: '🌟',
-    title: 'Minha Heroína',
-    text: 'Você é minha heroína, mãe! Vi você enfrentar tantas batalhas e nunca desistir. Sua força me ensinou a levantar sempre, não importa quantas vezes eu caia.'
+    title: 'Minha Força',
+    text: 'Eu te vi carregar o peso do mundo nos ombros sem reclamar. Te vi sorrir quando estava cansada, só pra me ver bem. Aprendi com você que amor de verdade é ação, todo dia.'
   },
   {
     icon: '🏡',
-    title: 'Meu Lar é Você',
-    text: 'Não importa onde eu esteja no mundo, meu lar sempre será onde você estiver. Seu abraço é meu refúgio e seu colo ainda é meu lugar favorito.'
+    title: 'Onde Eu Sempre Volto',
+    text: 'Não importa o que a vida trouxer, você sempre vai ser meu ponto de volta. Seu abraço ainda é o lugar mais seguro que eu conheço, e sempre vai ser.'
   }
 ]
 </script>
 
 <template>
-  <section 
+  <section
     ref="sectionRef"
     class="py-16 px-4 bg-white/40 backdrop-blur-sm"
   >
     <div class="max-w-lg mx-auto">
       <!-- Section Title -->
-      <div 
+      <div
         class="text-center mb-12"
         :class="{ 'animate-fade-in-up': isVisible }"
       >
@@ -49,34 +49,34 @@ const messages = [
       </div>
 
       <!-- Main Message Card -->
-      <div 
+      <div
         class="glass rounded-3xl p-8 mb-8 text-center glow"
         :class="{ 'animate-scale-in': isVisible }"
         :style="{ animationDelay: '200ms' }"
       >
         <p class="font-sans text-foreground text-lg leading-relaxed mb-6">
-          Mãezinha querida, <span class="font-script text-2xl text-primary">Monica</span>,
+          Minha <span class="font-script text-2xl text-primary">Mãe</span>, minha Monica,
         </p>
         <p class="font-sans text-muted leading-relaxed mb-4">
-          Hoje você completa 53 anos e eu não poderia deixar de dizer o quanto você é 
-          importante pra mim. Desde pequeno, você sempre foi minha proteção, minha guia e meu maior exemplo.
+          Hoje você faz 53 anos e eu só consigo pensar em quanto eu tenho sorte de ser seu filho.
+          Não é fácil colocar em palavras tudo que você representa pra mim, mas hoje eu preciso tentar.
         </p>
         <p class="font-sans text-muted leading-relaxed mb-4">
-          Obrigado por tudo que você fez e faz por mim. Por cada sacrifício, cada conselho, 
-          cada bronca que me fez crescer. Eu sou quem sou graças a você, mãe.
+          Você me criou com tanto amor que eu aprendi, só de te observar, como se trata as pessoas,
+          como se mantém de pé nas horas difíceis e como se doa de verdade por quem a gente ama.
         </p>
         <p class="font-sans text-muted leading-relaxed mb-4">
-          Que Deus te abençoe muito e te dê muitos anos de vida com saúde para que eu possa 
-          continuar tendo o privilégio de te chamar de MÃE.
+          Cada esforço que você fez por mim, eu guardo aqui dentro. E eu peço a Deus todo dia
+          que te dê saúde, paz e muita alegria — porque você merece tudo de bom que existe nessa vida.
         </p>
         <p class="font-script text-2xl text-primary mt-6">
-          Te amo demais, mãe! 💕
+          Te amo muito, mãe. Do seu Nilsinho. 💕
         </p>
       </div>
 
       <!-- Message Cards -->
       <div class="space-y-6">
-        <div 
+        <div
           v-for="(message, index) in messages"
           :key="index"
           class="bg-white/70 backdrop-blur-sm rounded-2xl p-6 shadow-lg
